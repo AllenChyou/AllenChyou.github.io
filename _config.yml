@@ -2,25 +2,25 @@
 #   Main Configs   #
 # ---------------- #
 baseurl: 
-url: http://mazhuang.org
+url: 
 date_format: "ordinal"
-title: 码志
-subtitle: "打码改变人生"
-description: "马壮的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+title: Allen Chyou
+subtitle: "Give me roadmap"
+description: "张周健的学习笔记"
+keywords: AllenChyou, zhangzhoujian
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
-source_code: https://github.com/mzlogin/mzlogin.github.io
+# source_code: https://github.com/mzlogin/mzlogin.github.io
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma 
-organization: Sogou, Inc.
-organization_url: https://www.sogou.com
-location: Beijing, China
-email: chumpma@gmail.com
+author: Zhangzhoujian
+organization: Allinmoney, Inc.
+organization_url: https://www.allinmoney.com
+location: Shanghai, China
+# email: chumpma@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -79,12 +79,12 @@ collections:
 # ---------------- #
 #      Socials     #
 # ---------------- #
-github_username: mzlogin
-douban_username: freedim
-facebook_username: mzlogin
-weibo_username: mzlogin
-zhihu_username: mzlogin
-twitter_username: mzlogin
+github_username: AllenChyou
+# douban_username: freedim
+# facebook_username: mzlogin
+weibo_username: AllenChyou
+# zhihu_username: mzlogin
+# twitter_username: mzlogin
 
 # ---------------- #
 #      Comments    #
@@ -97,9 +97,9 @@ disqus_username: mzlogin
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_software_keywords: [Java, C++, Python, Design Patterns]
-skill_mobile_app_keywords: [Android, Reverse Engineering]
-skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
-popular_repos: ['chinese-copywriting-guidelines','android-reverse-engineering', 'csdncommenter', 'mzlogin.github.io', 'vim-markdown-toc']
-contribute_repos: ['sparanoid/chinese-copywriting-guidelines', 'waylife/RentCrawer']
+skill_software_keywords: [Java]
+skill_mobile_app_keywords: [iOS]
+# skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
+# popular_repos: ['chinese-copywriting-guidelines','android-reverse-engineering'# , 'csdncommenter', 'mzlogin.github.io', 'vim-markdown-toc']
+# contribute_repos: ['sparanoid/chinese-copywriting-guidelines', 'waylife/RentCr# awer']
 

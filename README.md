@@ -1,7 +1,7 @@
-码志
+AllenChyou的个人博客兼学习笔记
 =================
 
-我的个人博客：<http://mazhuang.org>，外观基于 [DONGChuan](http://dongchuan.github.io) 修改，感谢！
+网址：<http://zhangzhoujian.xyz>，fork自码志，十分感谢！
 
 欢迎 Star 和 Fork。
 

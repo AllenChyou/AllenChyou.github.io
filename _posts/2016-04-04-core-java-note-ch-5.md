@@ -476,8 +476,38 @@ public class Window extends Container{
 
 JAR文件就是一个压缩的层次目录文件，叫做类库文件。加载第三方类库的时候一般就是给出几个JAR文件。
 
+首先是对于class文件和类文件，如果包名是com.zzj.java，那么对应的文件就要放在com/zzj/java文件夹下。
+如果是Jar文件，就放在archives目录下。这两个都是基于工作目录基目录.而言的。
 
+之后就是设定类路径，类文件就是./路径来引用类，jar文件就需要写完整,./archives/jar.jar。
+
+最好是执行的时候自己制定classpath，比如使用java的-classpath参数来指定。
 
 ### 文档注释
+
+javadoc生成的HTML文档是和代码放在一起的，执行代码的javadoc就可以直接同步注释，保持一致性。
+
+#### 1.注释的插入
+
+javadoc从几个地方抽取信息，也就是需要加文档注释的几个方面。
+
+包；public类和接口；public和protected的构造器和方法；public和protected的域；
+
+注释放在要描述的特性前面，用斜杠两个星号开始，星号斜杠结束。
+
+之间的文本时自由格式的文本，可以使用@开头的标记。@author，@param。
+
+#### 2.类注释
+
+类注释放在import语句之后，类定义前面：
+
+```Java
+/**
+ * A <code>Card</code> object represents a playing card, such as...
+*/
+class Card{}
+```
+
+
 
 ### 类设计技巧

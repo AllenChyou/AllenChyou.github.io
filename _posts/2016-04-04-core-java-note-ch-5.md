@@ -508,6 +508,61 @@ javadoc从几个地方抽取信息，也就是需要加文档注释的几个方�
 class Card{}
 ```
 
+#### 3.方法注释
 
+要放在方法定义的前面：可以使用一些方法注释用的标记
+
+@param 描述变量，多条必须放在一起
+
+@return 返回值描述
+
+@throw 类描述，表示方法可能会抛出的异常
+
+```Java
+/**
+Raise the salary of an employee;
+@param byPercent the percentage
+@return the amount of the Raise
+*/
+public double raiseSalary(double byPercent){}
+```
+
+#### 4.域注释
+
+只对公有域建立文档。
+
+#### 5.通用注释
+
+@author 作者姓名
+
+@version 当前版本的描述
+
+@since 引入版本的特性描述
+
+@deprecated 废弃信息
+
+@see 引用，加上超链接
+
+#### 6.包与概述注释
+
+给包加上注释，需要加一个单独的文件
+
+第一个方案，加上一个package.html文件，在body之间的内容都会被提取
+
+第二个方案，加一个package-info.java文件，里面package之后加上文档注释，没有其他代码或者注释
 
 ### 类设计技巧
+
+设计出来的类要具有oop的专业水准
+
+第一，一定保证数据私有，绝对不要破坏数据封装。
+
+第二，一定要对数据进行初始化，不要依赖默认值，自己进行初始化。
+
+第三，不要在类中使用过多的基本类型。
+
+第四，不是所有的域都要setter和getter。
+
+第五，一个类不要有过多的职责，适当进行分解。
+
+第六，类名和方法要体现自己的含义，自己解释自己的代码是好代码。

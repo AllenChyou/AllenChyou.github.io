@@ -145,7 +145,20 @@ Object类默认是所有类的超类。
 ```Java
 class Employee{
 	...
-	public boolean equals(Employee )
+	public boolean equals(Object otherObject){
+		if (this == otherObject) return true;
+
+		if (otherObject == null) return false;
+
+		if (getClass() != otherObject.getClass())
+			return false;
+
+		Employee other = (Employee)otherObject;
+
+		return name.equals(other.name)
+			&& salary == other.salary
+			&& hireDay.equals(other.hireDay);
+	}
 }
 ```
 

@@ -169,7 +169,113 @@ Java语言规范要求equals方法需要符合的原则：
 
 自反性：对于任意非空的x，x.equals(x)应该返回true；
 
+对称性：对于任意的引用X和Y，当且仅当x.equals(y)返回true时候，y.equals(x)返回true。
+
+传递性：xyz，当x.equals(y)为true，且y.equals(z)为true的时候，x.equals(z)也要为true。
+
+一致性：如果x和y没有发生变化，那么反复调用x.equals(y)的结果应该一直是一致的。
+
+对于任意非空引用x，x.equals(null)应该是false。
+
+##### 如何写一个完美的equals方法
+
+1-显式参数命名为otherObject，稍后需要转换为另一个叫做other的变量。
+
+2-检测this和otherObject是不是同一个对象。
+
+```Java
+if(this == otherObject) return true;
+```
+
+3-检测otherObject是不是为null，如果为null就返回false
+
+```Java
+if(otherObject == null) return false;
+```
+
+4-比较this和otherObject是不是同一个类的
+
+```Java
+if(getClass() != otherObject.getClass()) return false;
+```
+
+5-将otherObject转换为相应类型的对象
+
+```Java
+ClassName other = (ClassName)otherObject;
+```
+
+6-现在开始对所有的域进行比较，基本类型使用==，对象使用equals如果所有的域都匹配就返回true
+
+```Java
+return field1 == other.field1
+	&& Objects.equals(field2, other.field2)
+	&& ...;
+```
+
+如果在子类中重新定义了equals，要调用super的equals；
+
+Tips：对于数组类型的域，使用静态方法Array.equals进行检测
+
+#### 3.hashCode方法
+
+散列码hashCode是由对象导出的一个整型值。String类通过自己的方式计算hashCode
+
+```Java
+int hash = 0;
+for (int i = 0; i < length(); i++)
+	hash = 31 * hash + cahrAt(i);
+```
+
+String的hashCode是自己的内容导出的，所以String得内容相同，hashCode就相同，对象的hashCode是对象地址导出的，Object默认的是用对象地址。不覆盖Object的方法就是默认的。
+
+自己定义的hashCode方法，最好使用null安全的方式，如果参数null，hashcode会返回0。
+
+```Java
+class Employee{
+	public int hashCode(){
+		return 7 * Objects.hashCode(name)
+		+ 11 * new Double(salary).hashCode()
+		+ 13 * Objects.hashCode(hireDay);
+	}
+}
+```
+
+组合多个散列值的时候可以调用Objects的另一个组合方法。各自调用相应的hashCode，组合成一个int。
+
+```Java
+public int hashCode(){
+	return Objects.hash(name, salary, hireDay);
+}
+```
+
+如果存在数组形态的域，那就调用Array的静态方法。
+
+#### 4.toString方法
+
+toString()返回表示对象值的字符串，默认的实现，比如String，就是类名加上一个个的域的字符串。
+
+最好不要硬写类型名字，可以使用getClass().getName()获得类名的字符串。
+
 ### 泛型数组列表
+
+C语言里面必须在编译时就确定数组的大小，Java里面允许在运行时确定数组的大小。
+
+```Java
+int actualSize=...;
+Employee[] staff = new Employee[actualSize];
+```
+
+在运行时候动态改变数组的大小要使用ArrayList类。这个是使用类型参数的泛型类。尖括号里面的就是类型参数。
+
+在ArrayList里面可以动态的添加删除对象。
+
+```Java
+ArrayList<Employee> staff = new ArrayList<Employee>();
+staff.add(new Employee("Harry",...));
+sraff.add(new Employee("Tony",...));
+```
+
 
 ### 对象包装器和自动装箱
 

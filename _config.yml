@@ -1,12 +1,12 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl: 
-url: 
+baseurl:
+url:
 date_format: "ordinal"
 title: Allen Chyou
 subtitle: "Give me roadmap"
-description: "张周健的学习笔记"
+description: "学习笔记"
 keywords: AllenChyou, zhangzhoujian
 favicon: /favicon.ico
 timezone: Asia/Shanghai
@@ -90,9 +90,9 @@ weibo_username: AllenChyou
 #      Comments    #
 # ---------------- #
 # support provider: disqus, duoshuo, changyan
-comments_provider: disqus
-duoshuo_username: mazhuang
-disqus_username: mzlogin
+# comments_provider: disqus
+# duoshuo_username: mazhuang
+# disqus_username: mzlogin
 
 # ---------------- #
 #      Datas       #
@@ -102,4 +102,3 @@ skill_mobile_app_keywords: [iOS]
 # skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
 # popular_repos: ['chinese-copywriting-guidelines','android-reverse-engineering'# , 'csdncommenter', 'mzlogin.github.io', 'vim-markdown-toc']
 # contribute_repos: ['sparanoid/chinese-copywriting-guidelines', 'waylife/RentCr# awer']
-

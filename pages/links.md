@@ -10,4 +10,4 @@ permalink: /links/
 
 > God made relatives. Thank God we can choose our friends.
 
-做一个孤独的博客
+要做一个孤独的博客

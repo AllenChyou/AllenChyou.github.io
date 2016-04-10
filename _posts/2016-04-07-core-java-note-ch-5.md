@@ -273,16 +273,110 @@ Employee[] staff = new Employee[actualSize];
 ```Java
 ArrayList<Employee> staff = new ArrayList<Employee>();
 staff.add(new Employee("Harry",...));
-sraff.add(new Employee("Tony",...));
+staff.add(new Employee("Tony",...));
 ```
 
+#### 1.访问数组列表元素
+
+使用get和set方法实现改变数组元素的操作
+
+```Java
+staff.set(i, harry);
+```
+
+要使用add方法来添加新元素，set是更改现有的元素。
+
+获取元素是提供index就好
+
+```Java
+Employee e = staff.get(i);
+```
+
+普通数组和泛型数组的变化有几点：
+
+1-不必指明数组的大小
+
+2-使用add将任意多的元素添加到数组中
+
+3-使用size()替代计算元素的数目
+
+4-使用a.get(i)替代a[i]访问元素
 
 ### 对象包装器和自动装箱
 
+基本类型对应包装器，int对应Integer。数组列表是不允许类型参数是基本类型的。
+
+```Java
+ArrayList<Integer> list = new ArrayList<>();
+```
+
+自动装箱和拆箱给人一种基本类型和包装器类型一样的感觉和调用方式。
+
 ### 参数变量可变的方法
+
+变参方法其实是自动装箱的实现，类似于编译器把后面的变数参数进行打包，打包成对象数组。
+
+```Java
+printf(String fmt, Object... args);
+
+System.out.printf("%d %s", n, "widgets");
+
+System.out.printf("%d %s", new Object[]{ new Integer(n), "widgets"});
+```
+
+可以定义可变参数的方法，这样子，max方法
+
+```Java
+public static double max(double... values){
+	double largest = Double.MIN_VALUE;
+	for(double v : values){
+		if (v > largest) largest = v;
+	}
+}
+
+double m = max(3.1, 40.4, -5);
+```
 
 ### 枚举类
 
+枚举类型的定义
+
+```Java
+public enum Size{SMALL, MEDIUM, LARGE, EXTRA_LARGE};
+```
+
 ### 反射
 
+反射库，reflection library，编写能动态操纵Java代码的程序。
+
+能够分析类能力的程序称为反射，reflection。
+
+1-在运行中分析类的能力
+
+2-在运行中查看对象
+
+3-实现通用的数组操作代码
+
+4-利用method对象，类似C++中的函数指针
+
+最好的工匠是早工具的人，木匠做斧头，铁匠打锤头。
+
+先用好斧子锤子，再来做锤头斧头。
+
 ### 继承设计的技巧
+
+关于设计继承的技巧
+
+1. 将公共操作和域放在超类
+
+2. 不要直接使用protected的域
+
+3. 使用继承实现is-a的关系
+
+4. 除非所有继承而来的方法都是有意义的，否则不要使用继承
+
+5. 在覆盖方法的时候，不要改变预期的行为
+
+6. 使用多态，而不是类型信息
+
+7. 不要过多使用反射

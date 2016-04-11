@@ -38,7 +38,7 @@ button.addActionListener(listener);
 
 现在只要产生一个动作事件，事件监听器就会收到通告，按钮的话，那就是点击到了。
 
-```Java
+```Java	
 class MyListener implements ActionListener {
 	...
 	public void actionPerformer(ActionEvent event){
@@ -46,6 +46,10 @@ class MyListener implements ActionListener {
 	}
 }
 ```
+
+#### 实例：处理按钮点击事件
+
+
 
 
 

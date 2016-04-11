@@ -38,7 +38,7 @@ button.addActionListener(listener);
 
 现在只要产生一个动作事件，事件监听器就会收到通告，按钮的话，那就是点击到了。
 
-```Java	
+```Java
 class MyListener implements ActionListener {
 	...
 	public void actionPerformer(ActionEvent event){
@@ -47,11 +47,137 @@ class MyListener implements ActionListener {
 }
 ```
 
-#### 实例：处理按钮点击事件
+#### 1.实例：处理按钮点击事件
+
+点击按钮改变背景panel的颜色，首先创建按钮，传输标签字符串或者图标，或者两个都传入，就可以构造一个button出来。
+
+之后使用panel的add方法将button添加到panel当中。
+
+然后帮button添加action方法。
+
+action方法需要实现actionlistener接口。
 
 
+```Java
+package button;
 
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class ButtonFrame extends JFrame {
+
+	private JPanel buttonPanel;
+	private static final int DEFAULT_WIDTH = 300;
+	private static final int DEFAULT_HEIGHT = 200;
+
+	public ButtonFrame() {
+		setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
+
+		// create buttons
+		JButton yellowButton = new JButton("Yellow");
+		JButton blueButton = new JButton("Blue");
+		JButton redButton = new JButton("Red");
+
+		buttonPanel = new JPanel();
+
+		// add buttons to panel
+		buttonPanel.add(yellowButton);
+		buttonPanel.add(blueButton);
+		buttonPanel.add(redButton);
+
+		// add panel to frame
+		add(buttonPanel);
+
+		// create button actions
+		ColorAction yellowAction = new ColorAction(Color.YELLOW);
+		ColorAction blueAction = new ColorAction(Color.BLUE);
+		ColorAction redAction = new ColorAction(Color.RED);
+
+		// associate actions with buttons
+		yellowButton.addActionListener(yellowAction);
+		blueButton.addActionListener(blueAction);
+		redButton.addActionListener(redAction);
+	}
+
+	/**
+	 * An action listener that sets the panel's background color.
+	 */
+	private class ColorAction implements ActionListener {
+		private Color backgroundColor;
+
+		public ColorAction(Color c) {
+			backgroundColor = c;
+		}
+
+		public void actionPerformed(ActionEvent event) {
+			buttonPanel.setBackground(backgroundColor);
+		}
+	}
+}
+
+```
+
+#### 2.建议使用内部类
+
+上面三个button对象共享了一个监听器类，但是分贝使用不同的监听器对象。
+
+使用匿名内部类简化代码的话，注意，其实每一个button的处理过程都是一样的
+
+1. 用标签字符串构造按钮
+
+2. 将按钮添加到panel上
+
+3. 用对应颜色构造一个ActionListener
+
+4. 添加ActionListener
+
+可以使用辅助的方法实现
+
+```Java
+public void makeButton(String name, Color backgroundColor){
+	JButton button = new JButton(name);
+	buttonPanel.add(button);
+	ColorAction action = ColorAction(backgroundColor);
+	button.addActionListener(action);
+}
+```
+
+之后就可以简化调用
+
+```Java
+makeButton("Yellow", Color.Yellow);
+makeButton("Blue", Color.Blue);
+makeButton("Red", Color.RED);
+```
+
+然后可以进一步简化，ColorAction类只是在makeButton方法是使用一次，所以可以用匿名类实现。
+
+```Java
+public void makeButton(String name, Color backgroundColor){
+	JButton button = new JButton(name);
+	buttonPanel.add(button);
+	button.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent event){
+			buttonPanel.setBackground(backgroundColor);
+		}
+	});
+}
+```
+
+如果实在不喜欢内部类，也可以实现将自己的容器称为监听器，实现ActionListener的接口。
+
+```Java
+yellowButton.addActionListener(this);
+blueButton.addActionListener(this);
+redButton.addActionListener(this);
+```
+
+这样做的话就要根据不同的事件来源分配代码，显得有些杂乱。
 
 ### 动作
 

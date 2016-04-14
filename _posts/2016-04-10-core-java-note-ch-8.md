@@ -179,6 +179,23 @@ redButton.addActionListener(this);
 
 这样做的话就要根据不同的事件来源分配代码，显得有些杂乱。
 
+#### 3.创建包含一个方法调用的监听器
+
+比如一个loadButton的按钮，添加一个监听器可以包含方法调用
+
+#### 4.实例：改变观感
+
+Swing的默认观感是Metal观感。有两种方式改变观感。一个是配置文件，java安装的子目录jre/lib/swing.properties。在这个文件中，将属性swing.defaultlaf改成所希望的观感类名。
+
+swing.defaultlaf=con.sun.java.swing.plaf.motif.MotifLookAndFeel
+
+每一个平台的观感改变不相同，建议不要静态改变，还要重启程序等等。
+
+第二种是动态改变，需要调用静态的UIManager.setLookAndFeel，提供想要的观感名字。然后再调用静态方法SwingUtilities.updateComponentTreeUI来刷新全部的组件集合。
+
+
+
+
 ### 动作
 
 ### 鼠标事件

@@ -198,6 +198,65 @@ swing.defaultlaf=con.sun.java.swing.plaf.motif.MotifLookAndFeel
 
 ### 动作
 
+多个动作可以指向一个事件监听器，这样子实现一个工作的方式就有多种，点击一个按钮可以，菜单配置可以，快捷键也可以。无论是哪种方式下达命令，实现的效果都是一样的。
+
+Swing的动作实现机制是一个借口Action。Action封装了一些对象。
+
+- 命令的说明（一个文本字符串和一个图标）
+- 执行命令所需要的参数
+
+Action接口包含下面的方法；
+
+```Java
+// 熟悉的ActionListener接口中的方法，实际上ActionListener接口扩展自ActionListener
+void actionPerformed(ActionEvent)
+
+// 允许启用或者禁用这个动作，检查这个动作当前是不是可用
+void setEnabled(boolean b)
+boolean isEnabled()
+
+//允许存储或者检索动作对象中的任意键值，预定义的有Action.NAME和Action.SMALL_ICON
+void putValue(String key, Object value)
+Object getValue(String key)
+
+// 让其他对象在动作对象的属性发生变化时得到通告，尤其是菜单或是工具栏触发的动作。
+void addPropertyChangeListener(PropertyChangeListener listener)
+void removePropertyChangeListener(PropertyChangeListener listenr)
+```
+
+**预定义的Action键值表**
+
+|键|值|
+|-|-|
+|NAME|动作名称，显示在按钮和菜单上|
+|SMAL_ICON|存储小图标的地方：显示在按钮，菜单项或工具栏中|
+|SHORT_DESCRIPTION|图标的简要说明：显示在工具提示中|
+|LONG_DESCRIPTION|图标的详细说明：使用在在线帮助中。没有Swing组件使用这个值|
+|MNEMONIC_KEY|快捷键缩写：显示在菜单项中|
+|ACCELERATOR_KEY|存储加速击键的地方：Swing组件不使用这个值|
+|ACTION_COMMAND_KEY|历史遗留：仅在旧版本的registerKeyboardAction方法中使用|
+|DEFAULT|常用的综合属性：Swing组件不使用这个值|
+
+Action作为接口，实现接口必须实现所有方法才可以。还好有个一个类实现了除了actionPerformed之外的素有方法，就是抽象类AbstractAction，可以再慧姐扩展这个类，然后实现actionPerformed方法。
+
+```Java
+public class ColorAction extends AbstractAction{
+	public ColorAction(String name, Icon icon, Color c){
+		putValue(Action.NAME, name);
+		putValue(Action.SMALL_ICON, icon);
+		putValue("color", c);
+		putValue(Action.SHORT_DESCRIPTION, "Set panel color to " + name.toLowerCase());
+	}
+
+	public void actionPerformed(ActionEvent event){
+		Color c = (Color) getValue("color");
+		buttonPanel.setBackground(c);
+	}
+}
+```
+
+
+
 ### 鼠标事件
 
 ### AWT事件继承层次

@@ -255,8 +255,12 @@ public class ColorAction extends AbstractAction{
 }
 ```
 
-
-
 ### 鼠标事件
 
+只是点击按钮或者菜单项的话，用不着特地处理鼠标事件。但是画图啦，拖动，捕获鼠标点击之类的，那就要特别对待了。
+
 ### AWT事件继承层次
+
+Java事件处理采用的是面向对象的方法，所有的时间都是由java.util包中的EventObject扩展而来的。EventObject类有一个子类AWTEvent，他是所有AWT事件类的父类。
+
+事件对象封装了事件源与监听器彼此通信的事件信息。

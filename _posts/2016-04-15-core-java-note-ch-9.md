@@ -5,8 +5,7 @@ categories: Java
 description: Java核心技术第一卷读书笔记
 keywords: Java
 ---
-Swing用户界面组件
----
+
 
 构造GUI的基本方法已经知晓过后，就是介绍功能更加齐全的GUI重要工具。
 首先是介绍Swing的基本体系结构；常用的界面组件；

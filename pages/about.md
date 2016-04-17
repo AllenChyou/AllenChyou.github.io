@@ -8,4 +8,10 @@ menu: 关于
 permalink: /about/
 ---
 
-content here
+AllenChyou，励志孤独的博客
+
+### 联系
+
+* Github：[@AllenChyou](https://github.com/AllenChyou)
+
+  

@@ -1,0 +1,11 @@
+---
+layout: post
+title: The Hidden Language of Computer-Chapter 01-Best friend
+categories: Reading Note
+description: The Hidden Language of Computer Hardware and Software-Chapter 01-Best friend
+keywords: Blog
+---
+
+### The Hidden Language of Computer Hardware and Software
+
+@auther Charles Petzold

@@ -2,12 +2,23 @@
 <html>
   {% include head.html %}
   <body>
+
     <header class="site-header">
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </header>
+    <div class="site-navi">
+    	<a href="/"> Home/ </a>
+      <a href="/"> Category/ </a>
+    	<a href="/"> Wiki/ </a>
+      <a href="/"> About/ </a>
+      <a href="/"> Links/ </a>
+    </div>
     <div class="page-content">
       {{ content }}
     </div>
+
     {% include ga.html %}
+
+    {% include footer.html %}
   </body>
 </html>

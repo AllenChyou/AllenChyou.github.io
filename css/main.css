@@ -144,7 +144,7 @@ hr {
 }
 
 .site-navi {
-  text-align: right;
+  text-align: center;
   margin-top: 5px;
   margin-left: 90px;
   margin-right: 90px;
@@ -181,7 +181,8 @@ hr {
   max-width: 48rem;
   padding: 0.3rem 1rem;
   margin: 0 auto;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /**
  * Pages
@@ -218,6 +219,7 @@ hr {
   color: #828282; }
 
 .post-content {
+  letter-spacing: -1px;
   margin-bottom: 2rem; }
   .post-content h1, .post-content h2, .post-content h3,
   .post-content h4, .post-content h5, .post-content h6 {

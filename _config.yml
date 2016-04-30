@@ -1,104 +1,14 @@
-# ---------------- #
-#   Main Configs   #
-# ---------------- #
-baseurl:
-url:
-date_format: "ordinal"
-title: Allen Chyou
-subtitle: "Give me roadmap"
-description: "学习笔记"
-keywords: AllenChyou
-favicon: /favicon.ico
-timezone: Asia/Shanghai
-encoding: "utf-8"
-# source_code: https://github.com/mzlogin/mzlogin.github.io
+# Site settings
+title: slim
+baseurl: ""
+url: "http://syaning.com"
 
-# ---------------- #
-#      Author      #
-# ---------------- #
-author: Zhangzhoujian
-organization: Allinmoney, Inc.
-organization_url: https://www.allinmoney.com
-location: Shanghai, China
-# email: chumpma@gmail.com
-
-# ---------------- #
-#    Navigation    #
-# ---------------- #
-navs:
-  -
-    href: /
-    label: 首页
-
-  -
-    href: /categories/
-    label: 分类
-
-  -
-    href: /wiki/
-    label: 维基
-
-  -
-    href: /links/
-    label: 链接
-
-  -
-    href: /about/
-    label: 关于
-
-# ---------------- #
-#       RSS        #
-# ---------------- #
-subscribe_rss: /feed.xml
-
-# ---------------- #
-#      Jekyll      #
-# ---------------- #
-markdown: kramdown
+# Build settings
 kramdown:
-    input: GFM
-highlighter: rouge
-paginate: 8
-lsi: false
-quiet: false
-excerpt_separator: "\n\n"
-permalink: /:year/:month/:day/:title/
-gems:
-    - rouge
-#     - jekyll-html-pipeline
-    - jekyll-paginate
-    - jekyll-sitemap
-    - jekyll-feed
-    - jemoji
-#     - jekyll-mentions
-collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/
+  input: GFM
+permalink: pretty
 
-# ---------------- #
-#      Socials     #
-# ---------------- #
-github_username: AllenChyou
-# douban_username: freedim
-# facebook_username: mzlogin
-weibo_username: AllenChyou
-# zhihu_username: mzlogin
-# twitter_username: mzlogin
-
-# ---------------- #
-#      Comments    #
-# ---------------- #
-# support provider: disqus, duoshuo, changyan
-# comments_provider: disqus
-# duoshuo_username: mazhuang
-# disqus_username: mzlogin
-
-# ---------------- #
-#      Datas       #
-# ---------------- #
-skill_software_keywords: [Java]
-skill_mobile_app_keywords: [iOS]
-# skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
-# popular_repos: ['chinese-copywriting-guidelines','android-reverse-engineering'# , 'csdncommenter', 'mzlogin.github.io', 'vim-markdown-toc']
-# contribute_repos: ['sparanoid/chinese-copywriting-guidelines', 'waylife/RentCr# awer']
+# Third-party services
+# just leave someone empty to disable it
+google_analytics:
+disqus_shortname:

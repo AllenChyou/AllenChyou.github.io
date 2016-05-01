@@ -9,7 +9,10 @@ kramdown:
 permalink: pretty
 
 # Code Highlight
-highlighter: true
+rouge: true
+
+#lsi: true
+port: 5000
 
 # Third-party services
 # just leave someone empty to disable it

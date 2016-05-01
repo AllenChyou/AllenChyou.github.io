@@ -9,7 +9,8 @@ permalink: /wiki/
 <ul>
   {% for post in site.posts %}
     {% if post.layout  == "wiki" %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date: "%b %d, %Y" }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
 	{% endfor %}
 </ul>

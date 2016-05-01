@@ -9,9 +9,14 @@ kramdown:
 permalink: pretty
 
 # Code Highlight
-rouge: true
+highlighter: rouge
 
 # Third-party services
 # just leave someone empty to disable it
 # google_analytics:
 # disqus_shortname:
+
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/

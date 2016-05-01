@@ -8,6 +8,9 @@ kramdown:
   input: GFM
 permalink: pretty
 
+# Code Highlight
+highlighter: true
+
 # Third-party services
 # just leave someone empty to disable it
 # google_analytics:

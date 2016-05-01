@@ -155,9 +155,7 @@ hr {
 
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  margin-left: 90px;
-  margin-right: 90px;
-  text-align: right;
+  text-align: center;
   padding: 1rem 0;
   font-size: 0.8rem;
 }

@@ -1,11 +1,13 @@
 ---
 layout: page
-title:  Archives
+permalink: /home/
 ---
+
+<h2 class="smallcap">Posts</h2>
 <ul class="post-list">
 	{% for post in site.posts %}
 	<li>
-		<span>{{ post.date | date: "%b %d, %Y" }}</span>
+		<span>{{ post.date | date: "%Y/%m/%d" }}</span>
 		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</li>
 	{% endfor %}

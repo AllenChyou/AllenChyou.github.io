@@ -1,6 +1,7 @@
 ---
 layout: wiki
-title: Emacs keboard bind
+title: Emacs keyboard bind
+categories: wiki
 ---
 
 emacs is a good editor.

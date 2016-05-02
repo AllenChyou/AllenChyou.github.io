@@ -1,8 +1,8 @@
 ---
 layout: page
+title: Reference
 permalink: /refer/
 ---
-<h2 class="smallcap">Reference</h2>
 
   <ul>
     {% assign sorted_categories = site.categories | sort %}

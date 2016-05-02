@@ -10,7 +10,7 @@ keywords: JavaScript
 
 浏览器HTML内嵌JS脚本示例：一个JS贷款计算器
 
-```HTML
+{% highlight HTML %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -350,4 +350,4 @@ function chart(principal, interest, monthly, payments) {
 </script>
 </body>
 </html>
-```
+{% endhighlight %}

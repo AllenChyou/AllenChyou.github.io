@@ -6,7 +6,7 @@ url: "http://zhangzhoujian.xyz"
 # Build settings
 kramdown:
   input: GFM
-permalink: pretty
+permalink: date
 
 # Code Highlight
 highlighter: rouge
@@ -15,8 +15,3 @@ highlighter: rouge
 # just leave someone empty to disable it
 # google_analytics:
 # disqus_shortname:
-
-collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/

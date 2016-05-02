@@ -1,9 +1,8 @@
 ---
 layout: page
+title: Posts
 permalink: /home/
 ---
-
-<h2 class="smallcap">Posts</h2>
 <ul class="post-list">
 	{% for post in site.posts %}
 	{% if post.layout == "post" %}

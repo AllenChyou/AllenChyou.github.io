@@ -1,16 +1,11 @@
 ---
 layout: page
-title: Wiki
-permalink: /wiki/
+title: Links
+permalink: /links/
 ---
-
-> How much times to repeat can wake you up? Remember the map.
-
-<ul>
-  {% for post in site.posts %}
-    {% if post.layout  == "wiki" %}
-      <li><span>{{ post.date | date: "%b %d, %Y" }}</span>
-      <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
-	{% endfor %}
-</ul>
+- <a href="http://kubiops.com" target="blank">Bean He</a>
+- <a href="https://github.com" target="blank">AlenChyou Github</a>
+- <a href="http://www.sqlite.org" target="blank">SQLite Official Site</a>
+- <a href="https://developer.apple.com/library/ios/navigation/" target="blank">iOS Developer Library</a>
+- <a href="http://www.cnblogs.com/figure9/p/developer-reading-list.html#software_testing" target="blank">Books developer to read</a>
+- <a href="http://norvig.com/21-days.html" target="blank">Teach Yourself Programming in Ten Years</a>

@@ -3,6 +3,8 @@ layout: page
 title: Links
 permalink: /links/
 ---
+
+- <a href="http://docs.oracle.com/javase/8/docs/api/" target="blank">Java 8 API Document</a>
 - <a href="http://kubiops.com" target="blank">Bean He</a>
 - <a href="https://github.com" target="blank">AlenChyou Github</a>
 - <a href="http://www.sqlite.org" target="blank">SQLite Official Site</a>

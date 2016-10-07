@@ -1,9 +1,7 @@
 
-Forked from slim theme.
+Forked form HyG
 
-# slim
-
-slim is just a slim jekyll theme. [Demo](http://syaning.com/slim).
+Thanks!
 
 ### License
 

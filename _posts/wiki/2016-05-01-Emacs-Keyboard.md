@@ -1,5 +1,5 @@
 ---
-layout: wiki
+layout: post
 title: Emacs keyboard bind
 categories: wiki
 ---

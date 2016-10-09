@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "写在国庆最后一天的雨夜"
+title:  "个人博客101"
 categories: 博客
 tags:  个人博客
 ---

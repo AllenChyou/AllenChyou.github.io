@@ -1,10 +1,13 @@
 ---
 layout: post
-title: RESTful API介绍
+title: "RESTful API介绍"
 categories: Network
 description: 对于RESTfulAPI的简单介绍理解，翻译自martin fowler的文章
-keywords: Network
+tags: 网络 restful 
 ---
+
+* content 
+{:toc}
 
 **Richardson Maturity Model(RMM)理查德森模型**
 

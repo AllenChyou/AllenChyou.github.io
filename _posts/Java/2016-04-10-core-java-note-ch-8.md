@@ -3,8 +3,11 @@ layout: post
 title: Core Java读书笔记-Chapter 8 事件处理
 categories: Java
 description: Java核心技术第一卷读书笔记
-keywords: Java
+tags: Java Java核心技术
 ---
+
+* content
+{:toc}
 
 实现用户界面，必须明白Java事件处理的基本方法。接下去是，Java AWT事件模型的工作机制，从中看到如何捕获用户界面组件和输入设备产生的事件。还有如何更加结构化的方式处理动作，actions，事件。
 

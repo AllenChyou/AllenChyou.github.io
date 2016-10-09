@@ -3,8 +3,11 @@ layout: post
 title: MySQL数据库DB基本操作
 categories: MySQL
 description: MySQL数据库层面的操作
-keywords: MySQL
+tags: MySQL
 ---
+
+* content
+{:toc}
 
 ## MySQL数据库基本操作
 

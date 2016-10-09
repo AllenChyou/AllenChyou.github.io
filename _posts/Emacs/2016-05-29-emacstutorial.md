@@ -1,10 +1,13 @@
 ---
 layout: post
 title: Emacs Tutorial Memo
-categories: Emacs
+categories: emacs
 description: How much emacs command can I remember?
-keywords: Emacs
+tags: emacs
 ---
+
+* content
+{:toc}
 
 C is Control key, M is Meta(Alt) key.
 

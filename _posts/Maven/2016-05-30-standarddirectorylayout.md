@@ -1,10 +1,13 @@
 ---
 layout: post
 title: Introduction to the Standard Directory Layout
-categories: Maven
+categories: maven
 description: There is a standard directory layout to make people comfort
-keywords: Maven
+tags: maven
 ---
+
+* content
+{:toc}
 
 There is a standard layout about directory to make people feel at home. Maven will create it with initialization.
 

@@ -1,10 +1,13 @@
 ---
 layout: post
-title: Core Java读书笔记-Chapter 11 异常、断言、日志和调试
+title: "Core Java读书笔记-Chapter 11 异常、断言、日志和调试"
 categories: Java
 description: Java核心技术第一卷读书笔记
-keywords: Java
+tags: Java Java核心技术
 ---
+
+* content
+{:toc}
 
 在另一个完美世界，程序的格式永远是正确的，要用的文件一定是存在的，网络是不会有延迟的，传输也绝不会出错。
 

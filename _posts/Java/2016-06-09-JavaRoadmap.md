@@ -1,10 +1,13 @@
 ---
 layout: post
-title: Java Web 学习路线图
+title: "Java Web 学习路线图"
 categories: Java
-description: Java Web 服务器方向的学习路径Memo
-keywords: Java
+description: "Java Web 服务器方向的学习路径Memo"
+tags: Java
 ---
+
+* content
+{:toc}
 
 #### 入门阶段
 
@@ -72,4 +75,4 @@ keywords: Java
 
 文章链接[服务端技术选型原址](http://xielong.me/2015/04/17/服务端技术选型/)
 
-服务端技术选型[本站链接](http://www.zhangzhoujian.xyz/java/2016/06/09/JavaWebServerSideTechSelection.html)
+

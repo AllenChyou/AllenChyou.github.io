@@ -3,8 +3,11 @@ layout: post
 title: MySQL表查询操作
 categories: MySQL
 description: MySQL查询表中内容的操作
-keywords: MySQL
+tags: MySQL
 ---
+
+* content
+{:toc}
 
 # SQL查询语句
 
@@ -16,7 +19,7 @@ keywords: MySQL
 
 使用SELECT进行基本查询
 
-```SQL
+```
 SELECT 属性列表 FROM 表名字和视图列表
   [WHERE 条件表达式1]
   [GROUP BY 属性名1 [HAVING 条件表达式2]]
@@ -28,12 +31,12 @@ SELECT 属性列表 FROM 表名字和视图列表
 
 - EX: 省略后面的条件之类的就会默认输出全部数据
 
-```SQL
+```
 SELECT num,name,age,sex,homeaddr FROM employee;
 ```
 - EX: 包含条件和排序的查询
 
-```SQL
+```
 SELECT num,d_id,name,age,sex,homeaddr
   FROM employee
   WHERE age<26
@@ -46,7 +49,7 @@ SELECT num,d_id,name,age,sex,homeaddr
 
 使用 \* 查询所有字段
 
-```SQL
+```
 SELECT * FROM employee;
 ```
 

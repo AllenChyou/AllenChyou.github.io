@@ -1,10 +1,13 @@
 ---
 layout: post
 title: Maven repository mirrors config in China
-categories: Maven
+categories: maven
 description: Insert some config sentence in setting.xml
-keywords: Maven
+tags: maven
 ---
+
+* content
+{:toc}
 
 The central maven repository is so slow to download plugins and jars. Config maven seeting files to fasten the download speed.
 

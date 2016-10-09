@@ -3,7 +3,11 @@ layout: post
 title: 插入排序的基本理解
 categories: 算法
 description: 插入排序的理解和实现
+tags: 算法 排序 插入排序
 ---
+
+* content
+{:toc}
 
 排序，把没有规律的一列东西按照一定的规律进行排列，这个规律可以自定义。插入排序是类似升序或者降序的一种实现方式。
 

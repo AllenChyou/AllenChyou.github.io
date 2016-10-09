@@ -3,8 +3,11 @@ layout: post
 title: Core Java读书笔记-Chapter 10 部署用用程序和applet
 categories: Java
 description: Java核心技术第一卷读书笔记
-keywords: Java
+tags: Java Java核心技术
 ---
+
+* content
+{:toc}
 
 怎么把应用程序打包给用户呢？怎么部署到计算机上呢？怎么存储配置信息和用户首选项？
 

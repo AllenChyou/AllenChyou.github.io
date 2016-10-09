@@ -1,10 +1,13 @@
 ---
 layout: post
 title: JavaScript权威指南-第一章-JavaScript概述
-categories: JavaScript
+categories: javascript
 description: JavaScript权威指南读书笔记
-keywords: JavaScript
+tags: javascript
 ---
+
+* content
+{:toc}
 
 这一张简单介绍了JS的历史，大概说了下语法。
 

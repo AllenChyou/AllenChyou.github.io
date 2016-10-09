@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Emacs keyboard bind
-categories: wiki
+categories: emacs
+tags: emacs
 ---
 
 emacs is a good editor.

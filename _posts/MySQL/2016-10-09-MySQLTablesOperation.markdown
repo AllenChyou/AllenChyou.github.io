@@ -3,8 +3,11 @@ layout: post
 title: MySQL表基本操作
 categories: MySQL
 description: MySQL表层面的操作
-keywords: MySQL
+tags: MySQL
 ---
+
+* content
+{:toc}
 
 ## MySQL数据表基本操作
 表是数据库存储数据的基本单位，一个表包含若干字段。表操作包括表的创建，修改和删除

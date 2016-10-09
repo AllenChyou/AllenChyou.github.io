@@ -1,14 +1,17 @@
 ---
 layout: post
 title: Using TestNG in Maven
-categories: Maven
+categories: maven
 description: TestNG is a Java unit testing framework, This post is using xml to run testng in maven.
-keywords: Maven
+tags: maven
 ---
+
+* content
+{:toc}
 
 To run testng in maven, you need to configure a plugin named with surefire in pom.xml.
 
-```XML
+```
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -58,7 +61,7 @@ Of course, you also need make a testng.xml to config some test class.
 
 testng.xml
 
-```XML
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">

@@ -3,8 +3,11 @@ layout: post
 title: Core Java读书笔记-Chapter 4 对象与类
 categories: Java
 description: Java核心技术第一卷，第四章对象与类读书笔记
-keywords: Java
+tags: Java Java核心技术
 ---
+
+* content
+{:toc}
 
 面向对象程序设计和面向过程程序设计是两种不同的思维方式，而且有着很大的区别。
 

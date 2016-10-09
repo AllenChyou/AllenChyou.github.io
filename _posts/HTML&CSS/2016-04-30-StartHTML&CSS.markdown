@@ -1,10 +1,14 @@
 ---
 layout: post
 title: HTML&CSS浅析
-categories: HTML&CSS
+categories: HTML CSS
 description: Start to learn HTML and CSS.
-keywords: HTML&CSS
+tags: HTML CSS
 ---
+
+* content
+{:toc}
+
 #### 文字的第一意义就是传递信息
 
 文字的出现实现了保存信息，非即时传递信息的方式。语言文字往往是连在一起说，语言的出现比文字早很多，语言方式的信息传递是即时的，语音的记录那是另一个故事了。文字作为信息的载体存在了很多年，并且也一直会存在下去。

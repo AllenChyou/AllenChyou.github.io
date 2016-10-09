@@ -2,9 +2,13 @@
 layout: post
 title: 精通正则表达式-第1章-学习笔记
 categories: 正则表达式
+tags: 正则表达式 精通正则表达式
 description: 正则表达式
 keywords: 正则表达式
 ---
+
+* content
+{:toc}
 
 问题描述，检索某台web服务器上的页面重复单词（this this），进行文本编辑：
 

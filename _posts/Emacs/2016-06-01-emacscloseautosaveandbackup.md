@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Close emacs auto-save and backup
-categories: Emacs
+categories: emacs
 description: close auto-save and backup
-keywords: Emacs
+tags: emacs
 ---
 
 Emacs will suto save the buffer when editing, there will be other files in working direstory.

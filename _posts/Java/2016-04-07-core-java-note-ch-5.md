@@ -3,8 +3,11 @@ layout: post
 title: Core Java读书笔记-Chapter 5 继承
 categories: Java
 description: Java核心技术第一卷，第五章 继承-读书笔记
-keywords: Java
+tags: Java Java核心技术
 ---
+
+* content
+{:toc}
 
 继承（inheriteance），可以基于已存在的类构造一个新类，复用已存在的类的方法和域。也可以添加一些新的方法和域。
 

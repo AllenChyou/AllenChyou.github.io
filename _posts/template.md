@@ -6,4 +6,7 @@ description: some word here
 keywords: keyword1, keyword2
 ---
 
+* content
+{:toc}
+
 Content here

@@ -3,8 +3,11 @@ layout: post
 title: Core Java读书笔记-Chapter 6 接口与内部类
 categories: Java
 description: Java核心技术第一卷读书笔记
-keywords: Java
+tags: Java Java核心技术
 ---
+
+* content
+{:toc}
 
 接口，interface，描述类有什么功能，但是不给出每一个功能的具体实现。
 

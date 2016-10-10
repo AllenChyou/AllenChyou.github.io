@@ -29,7 +29,7 @@ sudo apt install mysql-server
 
 #### 报错信息
 
-![报错信息](http://ww4.sinaimg.cn/large/8d6a2535gw1f8mxz8r9mtj20a605t0tv.jpg)
+![报错信息](http://ww4.sinaimg.cn/large/8d6a2535gw1f8n4bykymnj209t05jdgv.jpg)
 
 百度一下：Lost connection to MySQL server at ‘reading initial communication packet', system error: 0
 
@@ -50,7 +50,7 @@ sudo vi /etc/mysql/my.cnf
 
 #### 报错信息
 
-![报错信息](http://ww3.sinaimg.cn/large/8d6a2535gw1f8my8tn5rzj20a605tq40.jpg)
+![报错信息](http://ww2.sinaimg.cn/large/8d6a2535gw1f8n4cv9034j209x05idgt.jpg)
 
 看上去是因为不允许本机ip链接mysql引起的错误
 
@@ -80,7 +80,7 @@ $ sudo /etc/init.d/mysql restart
 
 - Test Connection
 
-![Done](http://ww1.sinaimg.cn/large/8d6a2535gw1f8myjpn7oaj20b107y75j.jpg)
+![Done](http://ww3.sinaimg.cn/large/8d6a2535gw1f8n4eaw7krj20at07nq41.jpg)
 
 ### 小结
 

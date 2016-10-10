@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Greece Alphabet
-categories: wiki
-tags: 希腊字母表
+categories: memo
+tags: 希腊字母表 memo
 ---
 
 

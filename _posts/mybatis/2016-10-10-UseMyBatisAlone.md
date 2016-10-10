@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MyBatis单独使用TestDemo"
+title: "MyBatis的配置使用"
 categories: mybatis
 description: 不整合Spring的MyBatis使用
 tags: mybatis Java MySQL ORM
@@ -40,4 +40,5 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
-### 
+
+### 生成DAO层 

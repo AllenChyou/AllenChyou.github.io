@@ -8,6 +8,10 @@ tags: MySQL 数据库
 
 * content
 {:toc}
+有关数据库和DBMS的一些小贴士
+
+
+
 
 ### 术语
 

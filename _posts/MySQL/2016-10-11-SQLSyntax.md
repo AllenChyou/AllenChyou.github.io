@@ -9,6 +9,13 @@ tags: MySQL SQL
 * content
 {:toc}
 
+
+SQL的基本语法和操作示例
+
+
+
+
+
 ### 基本问题
 
 - 如何操作数据库？

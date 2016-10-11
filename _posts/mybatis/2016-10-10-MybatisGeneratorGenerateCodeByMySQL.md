@@ -8,6 +8,12 @@ tags: mybatis Java maven MySQL
 * content
 {:toc}
 
+自己手写DAO太真诚，使用生成器可以套路一下
+
+
+
+
+
 ### 事前准备
 
 - MySQL数据库准备OK（IP地址，密码，ssh连接）

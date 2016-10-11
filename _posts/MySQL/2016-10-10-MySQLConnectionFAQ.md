@@ -8,6 +8,13 @@ tags: MySQL memo
 * content
 {:toc}
 
+MySQL连接配置过程当中的Error记录
+- Lost Connection
+- Host not allowed 
+
+
+
+
 ### 事前准备
 
 - Ubuntu1404基础环境搭建OK

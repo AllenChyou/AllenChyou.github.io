@@ -7,6 +7,10 @@ tags: MySQL Ubuntu Linux
 
 * content
 {:toc}
+虚拟机搭建MySQL Server
+
+
+
 
 ### 事前准备
 

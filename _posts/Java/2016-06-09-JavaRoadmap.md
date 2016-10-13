@@ -9,6 +9,10 @@ tags: Java
 * content
 {:toc}
 
+
+
+
+
 #### 入门阶段
 
 - 掌握 Java。经典的《Java 核心技术：卷1 基础知识》(或者《Java 编程思想》)必看，跳过其中的图形和 applet 章节。习惯通过 Java API Doc。为了保证代码的质量，《Effective Java》、《Clean Code》和《重构》也需要至少通读一遍。

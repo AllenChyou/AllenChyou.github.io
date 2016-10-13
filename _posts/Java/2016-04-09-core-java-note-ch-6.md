@@ -9,6 +9,10 @@ tags: Java Java核心技术
 * content
 {:toc}
 
+
+
+
+
 接口，interface，描述类有什么功能，但是不给出每一个功能的具体实现。
 
 接口与实现，对象克隆和深拷贝。

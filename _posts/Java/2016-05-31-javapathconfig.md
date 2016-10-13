@@ -9,6 +9,10 @@ description: Java config memo
 * content
 {:toc}
 
+
+
+
+
 Java Develop Kit need to be find in system.
 
 Edit /etc/profile, maybe need to be root.

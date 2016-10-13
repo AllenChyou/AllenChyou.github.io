@@ -9,6 +9,10 @@ tags: maven
 * content
 {:toc}
 
+
+
+
+
 maven的中央仓库实在是太慢了，直接替换阿里的mirror
 
 - 阿里源

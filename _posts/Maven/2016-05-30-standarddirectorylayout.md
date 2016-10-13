@@ -9,6 +9,10 @@ tags: maven
 * content
 {:toc}
 
+
+
+
+
 There is a standard layout about directory to make people feel at home. Maven will create it with initialization.
 
 The first point to divide is which directory level file will be. Discription files will be in the top level.

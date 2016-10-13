@@ -6,6 +6,12 @@ description: close auto-save and backup
 tags: emacs
 ---
 
+* content
+{:toc}
+
+
+
+
 Emacs will suto save the buffer when editing, there will be other files in working direstory.
 
 Shut down it globally.

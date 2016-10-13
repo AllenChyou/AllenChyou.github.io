@@ -9,6 +9,8 @@ tags: JavaWeb 技术选型
 {:toc}
 
 
+
+
 #### 服务框架
 
 - MVC Framework：Rose 框架简单易用，并且我米内部服务和工具都优先支持 Rose 项目，默认使用 Rose 框架是很好的选择。文艺一点想做个异步化 web 服务，可以选择 Spring MVC 3.2 以上版本，并搭配高版本 Resin/Jetty 服务器，该方案已有线上服务使用，只是搭项目时会稍复杂些。

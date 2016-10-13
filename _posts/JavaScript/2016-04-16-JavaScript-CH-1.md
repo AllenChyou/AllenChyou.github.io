@@ -9,7 +9,11 @@ tags: javascript
 * content
 {:toc}
 
-这一张简单介绍了JS的历史，大概说了下语法。
+这一章节简单介绍了JS的历史，大概说了下语法。
+
+
+
+
 
 浏览器HTML内嵌JS脚本示例：一个JS贷款计算器
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript权威指南-第一章-JavaScript概述
+title: "JavaScript权威指南 第一章 JavaScript概述"
 categories: javascript
 description: JavaScript权威指南读书笔记
 tags: javascript
@@ -14,8 +14,67 @@ tags: javascript
 
 
 
+### javascript语言概述
 
-浏览器HTML内嵌JS脚本示例：一个JS贷款计算器
+#### 1.1 语言核心
+
+##### 面向对象
+
+- 初始化构造函数
+
+```
+function Point(x, y){
+  this.x = x;
+  this.y = y;
+}
+```
+
+- new关键字创建实例
+
+```
+var p = new Point(1, 2);
+```
+
+- 给构造函数prototype对象赋值来给对象定义方法
+
+```
+Point.prototype.r = function() {
+  return Math.sqrt(
+  this.x * this.x +
+  this.y * this.y);
+};
+```
+
+- 实例对象调用方法
+
+```
+p.r();
+```
+
+#### 1.2 客户端JavaScript
+
+##### 嵌入HTML的脚本
+
+- 使用<script>标签插入
+
+```
+<html>
+<head>
+<script type="text/javascript" src="library.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+// 在这里写嵌入到html中的代码
+</script>
+<p>Here is the content.</p>
+</body>
+</html>
+```
+
+
+
+
+#### 浏览器HTML内嵌JS脚本示例：一个JS贷款计算器
 
 {% highlight HTML %}
 <!DOCTYPE html>

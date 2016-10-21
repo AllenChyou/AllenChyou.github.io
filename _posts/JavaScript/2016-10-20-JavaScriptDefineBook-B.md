@@ -265,3 +265,154 @@ function f(x) {
 - 和var语句一样，创建的函数变量是无法删除的，但是可以更改，重新定义一个函数
 
 #### 5.4 条件语句
+
+- 控制语句，选择执行路径
+
+##### 5.4.1 if
+
+- if else的匹配规则是if会匹配最近的else，明确的办法就是加上花括号
+
+##### 5.4.2 else if
+
+- else if 并不是真正的js语句，而是一种惯用的写法
+
+##### 5.4.3 switch
+
+- 多重分支的情况，其中case的比较是使用===运算符比较的
+
+#### 5.5 循环
+
+- 4种循环语句；while do/while for for/in
+
+##### 5.5.1 while
+
+- 和C java的while一个意思
+
+##### 5.5.2 do/while
+
+- 执行一次再判断，没什么特别
+
+##### 5.5.3 for
+
+- 就是for，对的，就是for
+
+##### 5.5.4 for/in
+
+- 	和常规的for是完全不同的一类循环，可以循环遍历对象内的变量
+
+	- 遍历对象属性成员
+
+```
+for(var p in o)
+	console.log(o[p]);
+```
+
+- variable 可以是一个表达式，这样子每次给的变量都不同
+
+```
+var o = {x:1, y:2, z:3};
+var a = [], i = 0;
+for(a[i++] in o) /* empty */;
+```
+
+- 数组是特殊的对象，其实更方便
+
+```
+for (i in a) console.log(i);
+```
+
+- 枚举的顺序是按照属性出现的顺序
+
+#### 5.6 跳转
+
+- 程序跳转到某个位置，使用break，continue，可以带有标签
+
+- return是跳出函数体的执行，并返回调用的返回值
+
+- throw是抛出一个异常，try catch finally一起使用，异常会找到最近的闭合异常处理程序
+
+##### 5.6.1 标签语句
+
+- 语句可以添加标签，前面是标识符和冒号组成的
+
+- 定义和使用标签
+
+```
+mainloop: while(token != null) {
+	// code here
+	continue mainloop; // jump into next loop
+	// code here
+}
+```
+
+##### 5.6.2 break 语句
+
+- 退出内层循环或者switch语句
+
+- break后面也可以添加标签，跳转到标签处
+
+##### 5.6.3 continue 语句
+
+- 转而执行下一次循环，同样可以带标签
+
+- 只能在循环体内使用，不然会报错
+
+- 所谓执行下一次循环，怎么执行下一次循环，也是有区别和门道的
+
+	- while 中，会调到一开始，检测条件是否成立
+	- do/while 里面，会调到结尾，判断条件是不是成立才会继续
+	- for 中，**首先计算第三个自增表达式，然后再次检测test，判断是不是执行**
+	- for/in 里面，循环开始遍历下一个属性
+
+##### 5.6.4 return 语句
+
+- 就是返回呗，可以有也可以没有返回值
+
+##### 5.6.5 throw 语句
+
+- 抛出异常的方式和Java一样
+
+```
+function factorial(x) {
+	if (x < 0) throw new Error("x cannot be negative");
+
+	for (var f = 1; x > 1; f *= x, x--);
+	return f;
+}
+```
+
+- 异常会一层层向上寻找trycatch，也即是异常处理程序，如果一直没有就会最终报告给用户
+
+##### 5.6.6 try/catch/finally 语句
+
+- 异常处理，try 包裹代码，catch负责处理异常， finally作出最后的清理
+
+- try 块之内的异常抛出，要么是throw语句抛出，要么是调用一个方法间接抛出
+
+- catch 块里的代码要有异常才会有机会执行
+
+- finally 总会被执行
+
+#### 5.7 其他语句类型
+
+- 还有三种JS语句，width，debugger和use strict
+
+##### 5.7.1 with 语句
+
+- 用于临时扩展作用域链
+
+##### 5.7.2 debugger 语句
+
+- 调试模式什么的
+
+##### 5.7.3 use strict
+
+- 严格模式
+
+#### 5.8 JS语句小结
+
+- 每种语句的用法
+
+![](http://ww3.sinaimg.cn/large/8d6a2535jw1f8z2j3qtq7j20g1050aai.jpg)
+
+![](http://ww1.sinaimg.cn/large/8d6a2535jw1f8z2k3pl6bj20g60faacc.jpg)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JavaScript权威指南 第一章 JavaScript概述"
+title: "JavaScript权威指南 读书笔记-第1章 JavaScript概述"
 categories: javascript
 description: JavaScript权威指南读书笔记
 tags: javascript
@@ -10,6 +10,8 @@ tags: javascript
 {:toc}
 
 这一章节简单介绍了JS的历史，大概说了下语法。
+
+第1章：概述
 
 
 

@@ -120,3 +120,132 @@ h1, h2, h3, h4, h5, h6 {color: purple;}
 ##### 类选择器和ID选择器
 
 - 将class属性标记为一类，应用一个css声明
+
+- 类选择器和ID选择器都是需要在文档中事先作出构想和计划的，事先的布局，文档的配置，然后是选择OK
+
+- **类选择器**的前提条件是，标签的class属性指定，然后定义样式
+
+```
+*.warning {font-weight: bold;}
+```
+
+- 这个样式会应用到所有class属性为warning的标签中
+
+- 如果只是希望段落标签 p 中的类被选择应用，可以这样写样式
+
+```
+p.warning {font-weight: bold;}
+```
+
+- 逻辑上是并且的关系，是某个标签并且class的属性是warning
+
+```
+p.warning {font-weight: bold;}
+span.warning {font-style: italic;}
+```
+
+- **多类选择器**：class属性可以包含一个列表，使用空格分割，多个词出现的顺序不要紧
+
+- 样式中可以设定同时包含几个class同事存在才生效的声明
+
+```
+.warning {font-weight: bold;}
+.urgent {font-style: italic;}
+.warning.urgent {background: silver;}
+```
+
+- 结合标签选择和多类选择，同时存在才会生效，只有class中由warning又有help的p元素才会生效
+
+```
+p.warning.help {background: red;}
+```
+
+- **ID选择器**，类似于类选择器，id样式前面是井号，不是点
+
+```
+*#first-para {font-weight: bold;}
+```
+
+- 元素中的id属性配置为first-para之后，样式就会生效，忽略通配选择器星号，也能正常工作
+
+- **类选择器还是ID选择器？**
+
+	class可以应用到多个元素，但是id只可以有一个元素被应用，id的值在文档中必须是唯一的；
+
+	id选择器不能像类选择器一样，列表使用，只能有一个值
+
+	id和元素标签是无关的，具体演示会应用到什么元素上，无法确定
+
+#### 属性选择器
+
+	根据元素的属性及属性值来选择元素，有4种类型的属性选择器
+
+- 简单属性选择
+
+- 希望选择有某个属性的元素，不论这个属性的值是什么，只要标签中有这个属性，就会应用样式
+
+```
+h1[class] {color: silver;}
+p[title] {color: gray;}
+```
+
+加上通配符进行组合，应用到所有有该属性的标签上
+
+```
+*[title] {font-weight: bold;}
+```
+
+类似于多类选择，可以指定多个属性同时存在的情况下才应用样式，a 标签需要同时有，href和title属性的标签应用样式
+
+```
+a[href][title] {font-weight: bold;}
+```
+
+- 根据具体属性值选择
+
+根据具体属性值，可以缩小选择范围，只选择有特定属性值的元素，只选择某一个特定的链接的a标签
+
+```
+a[href="www.baidu.com"] { font-weight: bold;}
+```
+
+也可以类似多类选择器的情况
+
+```
+a[href="http://badu.com"][titile="W3C Home"] {font-size: 200%;}
+```
+
+- 根据部分属性值选择
+
+词列表的情况，空格分割，可以根据任意一个词进行选择，比如class属性，接受一个或者多个词座位属性值，这种情况下，想要选择包含warning的元素
+
+```
+p[class~="warning"] {font-weight: bold;}
+```
+
+选择器中的波浪号，表示可以选择一个，如果没有波浪号就需要完全值匹配
+
+这个方式不仅可以用于class，也可以适用于任何属性，只要是空格分割的词列表，就可以使用
+
+部分属性选择器的规范说法是子串匹配属性选择器
+
+![](http://ww2.sinaimg.cn/large/8d6a2535jw1f94vvdlcwtj20l704x3zb.jpg)
+
+基本适用于任何属性的值筛选
+
+```
+img[src*="space"] {border: 5px solid red;}
+```
+
+- 特定属性类的选择器
+
+```
+*[lang|="en"] {color: white;}
+```
+
+将会匹配所有en或者en-开头的元素，这种选择器可以用于任何属性值，最常见的是匹配语言值
+
+#### 使用文档结构
+
+理解父子关系，理解选择器和文档之间的关系，需要再次分析文档的结构
+

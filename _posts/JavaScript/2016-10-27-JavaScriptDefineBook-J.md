@@ -188,7 +188,64 @@ h1,h2 {
 - 内联样式的元素的style属性，所以也是可以js脚本化的，但是style的值不是字符串，而是一个CSSStyleDeclaration对象
 
 - 可以使用js访问元素的style对象
-
+、
 - **CSS动画**
 
 - 使用js的函数来实现抖动或者淡出的效果，视觉上实现动画
+
+#### 16.4 查询计算出的样式
+
+最后计算出的样式是一个CSSStyleDecalration对象，最后的渲染效果就是这个对象来确定
+
+可以使用window对象的getComputedStyle方法来使获得一个元素的计算样式，第一个参数是元素，第二个可以是伪对象，也可以是null
+
+```
+var title = document.getElementById("sectiontitle");
+var titlestyles = window.getComputedStyle(title, null);
+```
+
+计算样式对象和内联样式对象的区别
+
+	- 计算样式的属性是制度的
+	- 计算样式的单位没有相对值，只有绝对的单位尺寸
+
+暂时这个计算样式到底怎么用，有什么用意义不明
+
+#### 16.5 脚本化CSS类
+
+改变样式的一个实现就是改变元素的class属性，这样子就会改变一系列的样式应用
+
+定义一个class选择的样式，突出效果，这样可以吸引用户的注意
+
+```
+.attention {
+	background-color: yellow;
+	font-weight: bold;
+	border: solid black 2px;
+}
+```
+
+因为class是js的保留字，所以对象里面使用className来表示class属性
+
+```
+function grabAttention(e) {e.className = "attention";}
+function releaseAttention(e) {e.className = "";} 
+```
+
+#### 16.6 脚本化样式表
+
+关系到两类需要使用的对象，第一类是元素对象，style元素和link元素，都会包含或者引用样式表；第二类的是CSSStyleSheet对象，表示作为css文档关联的样式表
+
+##### 16.6.1 开启和关闭样式表
+
+最简单的脚本化技术也就是最便捷和最健壮的，上面的几个对象都有一个disable的属性，可以关闭忽略样式
+
+##### 16.6.2 查询，插入与删除样式表规则
+
+CSSStyleSheet对象也定义了API来查询，插入和删除样式
+
+一般更好地做法是让样式保持静态，然后对className进行更改
+
+##### 16.6.3 创建新样式表
+
+动态创建整个样式表并添加到文档中，是可以做到的

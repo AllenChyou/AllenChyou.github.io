@@ -278,27 +278,27 @@ document.firstChild.firstChild.nextSibling
 
 - 这些附加的属性不会对文档外观产生影响，dataset属性的引用遵循一定的规律
 	
-	在Element对象上的属性dataset，这个对象的属性就是data-属性名，复合驼峰命名
+在Element对象上的属性dataset，这个对象的属性就是data-属性名，复合驼峰命名
 
-	```
-	data-jquery-test => dataset.jqueryTest
-	```
+```
+data-jquery-test => dataset.jqueryTest
+```
  
- ##### 15.4.4 作为Attr节点的属性
+##### 15.4.4 作为Attr节点的属性
 
- - 还有一个使用Element属性的方法，attributes属性，代表元素的所有属性
+- 还有一个使用Element属性的方法，attributes属性，代表元素的所有属性
 
- ```
- document.body.attributes[0] 			// body元素的第一个属性
- document.body.attributes.bgcolor  		// body元素的bgcolor属性
- document.body.attributes["ONLOAD"] 	// body元素的onload属性
- ```
+```
+document.body.attributes[0] 			// body元素的第一个属性
+document.body.attributes.bgcolor  		// body元素的bgcolor属性
+document.body.attributes["ONLOAD"] 	// body元素的onload属性
+```
 
- #### 15.5 元素的内容
+#### 15.5 元素的内容
 
- - 元素的内容就是标签内的东西，可以理解成字符串，也可以理解成节点，或者纯文本
+- 元素的内容就是标签内的东西，可以理解成字符串，也可以理解成节点，或者纯文本
 
- ##### 15.5.1 作为HTML的元素内容
+##### 15.5.1 作为HTML的元素内容
 
 - element的属性innerHTML会作为字符串标记返回元素内容
 

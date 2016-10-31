@@ -12,6 +12,7 @@ icon: bookmark
 
 - [围脖图床修复计划](http://weibotuchuang.sinaapp.com/)
 
+- [jekyll英文官网](http://jekyllrb.com/)
 
 ### 编程语言
 

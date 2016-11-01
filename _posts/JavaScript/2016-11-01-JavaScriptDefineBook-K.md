@@ -13,6 +13,7 @@ tags: javascript
 
 第17章：事件处理
 
+第18章：脚本化HTTP
 
 
 
@@ -200,3 +201,21 @@ var request = new XMLHttpRequest();
 ```
 request.open("GET", "data.csv");
 ```
+
+##### 18.1.2 取得响应
+
+##### 18.1.3 请求body的编码
+
+表单编码是跟在url后面，以requestparam的形式，
+
+还有json编码和xml编码
+
+##### 18.1.4 HTTP进度事件
+
+##### 18.1.5 终止请求和超时
+
+##### 18.1.6 跨域HTTP请求
+
+#### 18.2 借助script发送HTTP请求：JSONP
+
+#### 18.3 基于服务器顿推送事件的Comet技术
